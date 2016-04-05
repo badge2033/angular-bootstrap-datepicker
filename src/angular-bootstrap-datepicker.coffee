@@ -7,8 +7,9 @@ dp.directive 'ngDatepicker', ->
     ngDatePickerOptions: '='
     ngModel: '='
   template: """
-            <div class="input-append date">
-              <input type="text"><span class="add-on"><i class="icon-th"></i></span>
+            <div class="input-group date">
+              <input type="text" class="form-control">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
             </div>
             """
   link: (scope, element)->
